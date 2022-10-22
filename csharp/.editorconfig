@@ -24,7 +24,7 @@ file_header_template = unset
 
 # this. 및 Me. 기본 설정
 dotnet_style_qualification_for_event = false:error
-dotnet_style_qualification_for_field = false:error
+dotnet_style_qualification_for_field = false
 dotnet_style_qualification_for_method = false:error
 dotnet_style_qualification_for_property = false:error
 
@@ -123,7 +123,7 @@ csharp_style_prefer_null_check_over_type_check = true
 csharp_style_prefer_range_operator = true
 csharp_style_prefer_tuple_swap = true
 csharp_style_prefer_utf8_string_literals = true
-csharp_style_throw_expression = true
+csharp_style_throw_expression = false
 csharp_style_unused_value_assignment_preference = discard_variable:error
 csharp_style_unused_value_expression_statement_preference = discard_variable:error
 
@@ -180,21 +180,21 @@ csharp_space_between_square_brackets = false
 
 # 기본 설정 래핑
 csharp_preserve_single_line_blocks = true
-csharp_preserve_single_line_statements = true
+csharp_preserve_single_line_statements = false
 
 #### 명명 스타일 ####
 
 # 명명 규칙
 
-dotnet_naming_rule.interface_should_be_begins_with_i.severity = suggestion
+dotnet_naming_rule.interface_should_be_begins_with_i.severity = error
 dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
 dotnet_naming_rule.interface_should_be_begins_with_i.style = begins_with_i
 
-dotnet_naming_rule.types_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.types_should_be_pascal_case.severity = error
 dotnet_naming_rule.types_should_be_pascal_case.symbols = types
 dotnet_naming_rule.types_should_be_pascal_case.style = pascal_case
 
-dotnet_naming_rule.non_field_members_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.non_field_members_should_be_pascal_case.severity = silent
 dotnet_naming_rule.non_field_members_should_be_pascal_case.symbols = non_field_members
 dotnet_naming_rule.non_field_members_should_be_pascal_case.style = pascal_case
 
